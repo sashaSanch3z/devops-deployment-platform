@@ -16,7 +16,7 @@ building, testing, and deploying a Python application.
 - [x] Create a Flask API with a health endpoint
 - [x] Set up a Python virtual environment
 - [x] Add `.gitignore`
-- [ ] Add automated tests
+- [x] Add automated tests
 - [ ] Containerize the application with Docker
 - [ ] Set up CI/CD with GitHub Actions
 
@@ -50,3 +50,22 @@ python app/main.py
 
 Open `http://127.0.0.1:5000/health` in your browser.
 
+## Automated Tests
+
+Run the tests with:
+
+```bash
+python -m pytest -v
+```
+
+The tests verify the health endpoint response:
+- HTTP status code `200`
+- JSON response `{"status": "ok"}`
+
+## Dependencies
+
+Install the project dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
